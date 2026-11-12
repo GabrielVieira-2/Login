@@ -80,3 +80,64 @@ main{
 .container-registrar a{
     font-weight: 800;
 }
+@media (min-width: 1024px) {
+     body{
+        background-image: url(./img/fundo-para-desktop.png);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: black;
+     }
+    main{
+        background-color: rgba(79, 91, 163, 0.288);
+        justify-content: center;
+        width: 496px;
+        height: 640px;
+        border-radius: 50px;
+    }
+    .icones a{
+        font-size: 20px;
+        height: 60px;
+        width: 60px;
+        box-shadow: black 5px 5px 10px;
+    }
+    input{
+        border-radius: 20px;
+    }
+
+    .texto-entrar-com {
+        font-size: 50px;
+    }
+
+    .icones-redes-sociais a:hover {
+        background-color:#8B5CF6;
+    }
+
+    .logar {
+        background-color: #8B5CF6;
+    }
+
+    .texto-usar-conta {
+        font-size: 16px;
+    }
+
+    .icones-redes-sociais a {
+        height: 55px;
+        width: 55px;
+        padding: 8px;
+        color: black;
+    }
+
+    .logar {
+        background-color:white;
+        color: black;
+        transition: 0.5s;
+    }
+    .logar:hover{
+        background-color:#8B5CF6;
+        color: white;
+    }
+
+}

@@ -1,16 +1,19 @@
-:root{
-    --vermelho:#ff3131
+:root {
+    --vermelho: #ff3131
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
-main{
+
+main {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,15 +23,18 @@ main{
     font-family: "Red Hat Display", sans-serif;
     padding: 35px;
 }
-.texto-entrar-com{
+
+.texto-entrar-com {
     font-size: 48px;
     font-weight: 400;
 }
-.icones-redes-sociais{
+
+.icones-redes-sociais {
     display: flex;
     gap: 16px;
 }
-.icones-redes-sociais a{
+
+.icones-redes-sociais a {
     height: 40px;
     width: 40px;
     display: flex;
@@ -39,23 +45,27 @@ main{
     box-shadow: 4px 4px 8px #999;
     transition: 0.5s;
 }
-.icones-redes-sociais a:hover{
+
+.icones-redes-sociais a:hover {
     background-color: var(--vermelho);
     color: white;
 }
-.formulario{
+
+.formulario {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.formulario input{
+
+.formulario input {
     height: 40px;
     border: none;
     background-color: #eee;
     padding: 8px;
 }
-.logar{
+
+.logar {
     background-color: var(--vermelho);
     width: 180px;
     height: 40px;
@@ -65,10 +75,80 @@ main{
     align-items: center;
     color: white;
 }
-.container-registrar{
+
+.container-registrar {
     display: flex;
     gap: 4px;
 }
-.container-registrar a{
+
+.container-registrar a {
     font-weight: 800;
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-image: url(./img/fundo-desktop.png);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    main {
+        background-color: rgba(181, 149, 196, 0.8);
+        justify-content: center;
+        width: 496px;
+        height: 640px;
+        border-radius: 50px;
+    }
+
+    .icones a {
+        font-size: 20px;
+        height: 60px;
+        width: 60px;
+        box-shadow: black 5px 5px 10px;
+    }
+
+    input {
+        border-radius: 20px;
+    }
+
+    .texto-entrar-com {
+        font-size: 50px;
+    }
+
+    .icones-redes-sociais a:hover {
+        background-color: #8B5CF6;
+    }
+
+    .logar {
+        background-color: #8B5CF6;
+    }
+
+    .texto-usar-conta {
+        font-size: 16px;
+    }
+
+    .icones-redes-sociais a {
+        height: 55px;
+        width: 55px;
+        padding: 8px;
+        color: black;
+    }
+
+    .logar {
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+    }
+
+    .logar:hover {
+        background-color: #8B5CF6;
+        color: white;
+    }
+
 }
